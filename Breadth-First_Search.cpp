@@ -67,15 +67,15 @@ void BFS(std::vector<int> graph[], int size, int startVertex, int endVertex){
 	// set initial node layer to 0
 	layers.at(startVertex) += 1;
 	// Step 1
-	// Put starting vertex at the back of a queue
+	// Put starting vertex at the back of a queue and mark as visited
 	q.push(startVertex);
+	visited.at(startVertex) = true;
 
 	std::vector<int>::iterator itr;
 	while(!q.empty()){
 		// Step 2
 		// Take front item of the queue and add it to the visited list
 		int currVertex = q.front();
-		visited.at(currVertex) = true;
 		std::cout << "Visited: " << currVertex << "\n";
 		q.pop();
 

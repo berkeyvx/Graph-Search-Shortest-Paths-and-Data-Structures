@@ -51,12 +51,12 @@ void BFS(std::vector<int> graph[], int size, int startVertex, std::vector<bool> 
 
 
 	q.push(startVertex);
+	visited.at(startVertex) = true;
 
 	std::vector<int>::iterator itr;
 	while(!q.empty()){
 		// Take front item of the queue and add it to the visited list
 		int currVertex = q.front();
-		visited.at(currVertex) = true;
 		std::cout << "Visited: " << currVertex << "\n";
 		q.pop();
 

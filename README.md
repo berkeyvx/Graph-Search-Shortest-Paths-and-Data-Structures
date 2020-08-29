@@ -21,4 +21,10 @@ The primary topics in this part of the specialization are: data structures (heap
 	<li>Breadth First Search and Shortest Path</li>
 	<li>Connected Components via BFS</li>
 	<li>Depth-First Search</li>
+	<li>Topological Sort via DFS</li>
+	<li>Strongly Connected Components via DFS</li>
+	<ul>
+		<li>graph.txt</li>
+		<li>graph2.txt</li>
+	</ul>
 </ul>

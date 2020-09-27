@@ -10,7 +10,7 @@
 </div>
 
 
-This reporsitory contains solutions of course.
+This repository contains solutions of the course.
 
 ## About this Course
 
@@ -27,4 +27,9 @@ The primary topics in this part of the specialization are: data structures (heap
 		<li>graph.txt</li>
 		<li>graph2.txt</li>
 	</ul>
+</ul>
+
+**XI. DIJKSTRA'S SHORTEST-PATH ALGORITHM (Week 2)**
+<ul>
+	<li>Dijkstra's Shortest-Path</li>
 </ul>

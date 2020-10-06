@@ -48,7 +48,7 @@ public:
         std::string line;
         int i = 0;
         std::string edge[2];
-        std::ifstream gTxt("/Users/berkeyavas/Desktop/code/GraphSearch-ShortestPath-DataStructures/graph.txt");
+        std::ifstream gTxt("/Users/berkeyavas/Desktop/code/GraphSearch-ShortestPath-DataStructures/Week1/graph.txt");
         while(getline(gTxt, line, ' ')) {
             edge[i] = line;
             ++i;

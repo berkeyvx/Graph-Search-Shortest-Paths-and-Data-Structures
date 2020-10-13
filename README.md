@@ -33,7 +33,7 @@ The primary topics in this part of the specialization are: data structures (heap
 
 **XI. DIJKSTRA'S SHORTEST-PATH ALGORITHM (Week 2)**
 <ul>
-	<li>Dijkstra's Shortest-Path(NOT IMPLEMENTED YET)</li>
+	<li>Dijkstra's Shortest-Path</li>
 </ul>
 
 
@@ -59,7 +59,7 @@ The primary topics in this part of the specialization are: data structures (heap
 
 **XVI. BLOOM FILTERS (Week 4)**
 <ul>
-	<li>Bloom Filters</li>
+	<li>Bloom Filters(NOT IMPLEMENTED YET)</li>
 </ul>
 
 

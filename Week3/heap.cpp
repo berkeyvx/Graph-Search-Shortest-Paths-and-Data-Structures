@@ -81,6 +81,8 @@ void heap::sink(int idx){
 		h[idx] = h[smallest];
 		h[smallest] = temp;
 		idx = smallest;
+		l = idx*2;
+		r = idx*2+1;
 	}
 }
 
@@ -88,6 +90,13 @@ void heap::sink(int idx){
 int main(int argc, char const *argv[])
 {
 	heap h;
+	h.insert(3);
+	h.insert(5);
+	h.insert(1);
+	h.insert(-1);
+	h.insert(8);
+	h.extractMin();
+	h.extractMin();
 	for (std::vector<int>::iterator i = h.h.begin() + 1; i != h.h.end(); ++i)
 	{
 		std::cout << *i << " ";

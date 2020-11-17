@@ -42,13 +42,18 @@ public:
         
     }
 
+    ~Graph(){
+        delete [] g;
+        delete [] visited;
+    }
+
     
 
     void initGraphFromFile(){
         std::string line;
         int i = 0;
         std::string edge[2];
-        std::ifstream gTxt("/Users/berkeyavas/Desktop/code/GraphSearch-ShortestPath-DataStructures/Week1/graph.txt");
+        std::ifstream gTxt("graph.txt");
         while(getline(gTxt, line, ' ')) {
             edge[i] = line;
             ++i;
@@ -92,7 +97,7 @@ public:
     
     
     // ordering of nodes
-    void DFS2(Graph g, long vertex, std::stack<long> &Stack){
+    void DFS2(Graph &g, long vertex, std::stack<long> &Stack){
         g.visited[vertex] = true;
         for (auto& x : g.getGraph()[vertex]) {
             if(!g.visited[x])
@@ -105,7 +110,7 @@ public:
     
     void SCC(){
         std::stack<long> Stack;
-        Graph gRev = reverseGraph(*this);
+        Graph gRev = reverseGraph(this);
         
         for (long i = totalVertexNumber - 1 ; i > -1 ; --i) {
             if(!gRev.visited[i])
@@ -130,11 +135,11 @@ public:
 
     
     
-    Graph reverseGraph(Graph g){
+    Graph reverseGraph(Graph *g){
         Graph reversedGraph(totalVertexNumber);
         std::list<long>::iterator itr;
         for(long i = 0; i < totalVertexNumber; i++){
-            for(itr = g.getGraph()[i].begin(); itr != g.getGraph()[i].end(); ++itr){
+            for(itr = g->getGraph()[i].begin(); itr != g->getGraph()[i].end(); ++itr){
                 reversedGraph.g[(*itr)].push_back(i);
             }
         }
